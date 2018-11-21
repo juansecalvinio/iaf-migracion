@@ -1,0 +1,23 @@
+{
+  "name": "migracion",
+  "version": "1.0.0",
+  "description": "Migración de Diagnósticos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon server.js"
+  },
+  "author": "jcalvino",
+  "license": "ISC",
+  "dependencies": {
+    "agenda": "^2.0.2",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^5.0.0-alpha.7",
+    "mongoose": "^5.3.8",
+    "mssql": "^4.2.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.6",
+    "tedious": "^3.0.1"
+  }
+}
