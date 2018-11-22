@@ -74,7 +74,7 @@ function mostrarDiagnosticos(req, res) {
 
 function migrarDiagnosticos(req, res) {
     obtenerDiagnosticos().then((data) => {
-        res.send(markey.insertDiagnosticosPorParametro(data));
+        res.send(markey.insertDiagnosticos(data));
     })
     .catch((err) => {
         console.log(err);

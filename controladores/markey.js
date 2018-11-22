@@ -110,22 +110,31 @@ function insertPruebaPorParametro(data, req, res) {
     });
 }
 
-function insertDiagnosticosPorParametro(data, callback) {
+function insertDiagnosticos(data, callback) {
     sqlConnection.close();
     sqlConnection.connect(config).then(pool => {
         var request = new mssql.Request(pool);
         Array.prototype.forEach.call(data, obj => {
             var queryUpdate = `UPDATE DIAGNOSTICOSGEO SET Tipo = '${obj.Tipo}', OS = '${obj.OS}', Fecha = '${obj.Fecha}', Persona = ${obj.Persona}, Nombre = '${obj.Persona1}', 
-            Ficha = '${obj.Ficha}', Pregunta = '${obj.Pregunta}', Codigo_Respuesta = ${obj.CodigoRespuesta}, Respuesta = '${obj.Respuesta}', audi_Fecha = GETDATE()
-            WHERE Tipo = '${obj.Tipo}', OS = '${obj.OS}', Fecha = '${obj.Fecha}', Persona = ${obj.Persona}, Nombre = '${obj.Persona1}', 
-            Ficha = '${obj.Ficha}', Pregunta = '${obj.Pregunta}', Codigo_Respuesta = ${obj.CodigoRespuesta}, Respuesta = '${obj.Respuesta}', audi_Fecha = CONVERT(GETDATE(), Fecha, 120)`;
+            Ficha = '${obj.Ficha}', Pregunta = '${obj.Pregunta}', Codigo_Respuesta = ${obj.CodigoRespuesta}, Respuesta = '${obj.Respuesta}', audi_Fecha = CONVERT(VARCHAR, GETDATE(), 120)
+            WHERE Tipo = '${obj.Tipo}'
+            AND OS = '${obj.OS}'
+            AND Fecha = '${obj.Fecha}'
+            AND Persona = ${obj.Persona}
+            AND Nombre = '${obj.Persona1}'
+            AND Ficha = '${obj.Ficha}'
+            AND Pregunta = '${obj.Pregunta}'
+            AND Codigo_Respuesta = ${obj.CodigoRespuesta}
+            AND Respuesta = '${obj.Respuesta}'`;
+            console.log(queryUpdate);
             request.query(queryUpdate).then((recordset) => {
-                if(recordset.rowsAffected === 0) {
+                if(recordset.rowsAffected == 0) {
                     var query = `INSERT INTO DIAGNOSTICOSGEO (Tipo, OS, Fecha, Persona, Nombre, Ficha, Pregunta, Codigo_Respuesta, Respuesta, audi_Fecha) 
                     VALUES ('${obj.Tipo}', ${obj.OS}, '${obj.Fecha}', ${obj.Persona}, '${obj.Persona1}', '${obj.Ficha}', 
-                    '${obj.Pregunta}', ${obj.CodigoRespuesta}, '${obj.Respuesta}', CONVERT(GETDATE(), Fecha, 120)`;
+                    '${obj.Pregunta}', ${obj.CodigoRespuesta}, '${obj.Respuesta}', CONVERT(VARCHAR, GETDATE(), 120))`;
+                    console.log(query);
                     request.query(query).then((recordset) => {
-                        if(recordset.rowsAffected === 0) {
+                        if(recordset.rowsAffected == 0) {
                             console.log('No se ha insertado ningún dato');
                         } else {
                             console.log(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
@@ -173,7 +182,7 @@ function obtenerUltimaFecha() {
 module.exports = {
     insertPrueba: insertPrueba,
     insertPruebaPorParametro: insertPruebaPorParametro,
-    insertDiagnosticosPorParametro: insertDiagnosticosPorParametro,
+    insertDiagnosticos: insertDiagnosticos,
     obtenerDiagnosticos: obtenerDiagnosticos,
     obtenerUltimaFecha: obtenerUltimaFecha
 }
