@@ -110,7 +110,7 @@ function insertPruebaPorParametro(data, req, res) {
     });
 }
 
-function insertDiagnosticos(data, callback) {
+function insertDiagnosticos(data) {
     sqlConnection.close();
     sqlConnection.connect(config).then(pool => {
         var request = new mssql.Request(pool);
@@ -126,13 +126,11 @@ function insertDiagnosticos(data, callback) {
             AND Pregunta = '${obj.Pregunta}'
             AND Codigo_Respuesta = ${obj.CodigoRespuesta}
             AND Respuesta = '${obj.Respuesta}'`;
-            console.log(queryUpdate);
             request.query(queryUpdate).then((recordset) => {
                 if(recordset.rowsAffected == 0) {
                     var query = `INSERT INTO DIAGNOSTICOSGEO (Tipo, OS, Fecha, Persona, Nombre, Ficha, Pregunta, Codigo_Respuesta, Respuesta, audi_Fecha) 
                     VALUES ('${obj.Tipo}', ${obj.OS}, '${obj.Fecha}', ${obj.Persona}, '${obj.Persona1}', '${obj.Ficha}', 
                     '${obj.Pregunta}', ${obj.CodigoRespuesta}, '${obj.Respuesta}', CONVERT(VARCHAR, GETDATE(), 120))`;
-                    console.log(query);
                     request.query(query).then((recordset) => {
                         if(recordset.rowsAffected == 0) {
                             console.log('No se ha insertado ningún dato');

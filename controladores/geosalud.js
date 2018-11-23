@@ -18,7 +18,6 @@ markey.obtenerUltimaFecha().then((data) => {
     if(!data) {
         console.log('DATA NULL');
     } else {
-        console.log(data);
         var ultimaFecha = data[0].Fecha;
         queryDiagnosticosGeo = `SELECT distinct TRS1.TipOSAbrev as 'Tipo', o.OsId as 'OS', DATE_FORMAT(o.OSFchHor, '%Y-%m-%d') as 'Fecha',
         o.OsPersId as 'Persona', OSRRHHID, RRHHDESC, Concat(Concat(o.OSPersApe, ' ', o.OSPersApe2) , ' ', Concat(o.OSPersNom, ' ', o.OSPersNom2)) as 'Persona1', 
@@ -34,9 +33,8 @@ markey.obtenerUltimaFecha().then((data) => {
         and of2.OsFicResId=of1.OsFicResId and of2.PregFrmDinaId=of1.PregFrmDinaId) and of1.FicId in (1,2) and of1.PregFrmDinaId in(45,14,62) 
         and (fic.FicId = of1.FicId) and (pre.PregFrmDinaId = of1.PregFrmDinaId ) 
         and (tio.TipOSId = of1.TipOSId)) TRS1 ON (TRS1.TipOSId = o.TipOSId and TRS1.osId = o.OsId) JOIN RRHH RH ON O.OSRRHHId = RH.RRHHID
-        where (o.OSFchHor between (DATE_FORMAT('${ultimaFecha}', '%Y-%m-%d') + interval 1 day) and (DATE_FORMAT('${ultimaFecha}', '%Y-%m-%d') + interval 10 day))
+        where (o.OSFchHor between (DATE_FORMAT('${ultimaFecha}', '%Y-%m-%d') + interval 1 day) and (DATE_FORMAT('${ultimaFecha}', '%Y-%m-%d') + interval 30 day))
         order by o.OSFchHor ASC limit 10;`;
-        console.log(queryDiagnosticosGeo);
     }  
 });
 
@@ -63,7 +61,6 @@ function obtenerDiagnosticos() {
 }
 
 function mostrarDiagnosticos(req, res) {
-    console.log(queryDiagnosticosGeo);
     obtenerDiagnosticos().then((data) => {
         res.send(data);
     }).catch((err) => {
@@ -73,6 +70,7 @@ function mostrarDiagnosticos(req, res) {
 }
 
 function migrarDiagnosticos(req, res) {
+    console.log(req.url);
     obtenerDiagnosticos().then((data) => {
         res.send(markey.insertDiagnosticos(data));
     })
