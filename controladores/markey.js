@@ -151,23 +151,23 @@ function insertDiagnosticos(data) {
                     '${obj.Pregunta}', ${obj.CodigoRespuesta}, '${obj.Respuesta}', CONVERT(VARCHAR, GETDATE(), 120))`;
                     request.query(query).then((recordset) => {
                         if (recordset.rowsAffected == 0) {
-                            loggerFile.error('No se ha insertado ningún dato');
-                            loggerConsole.error('No se ha insertado ningún dato');
+                            loggerFile.error(`No se ha insertado ningún dato | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                            loggerConsole.error(`No se ha insertado ningún dato | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
                         } else {
-                            loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
-                            loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+                            loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                            loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
                         }
                     }).catch((err) => {
-                        loggerFile.error(`Hubo un problema con la consulta ${err}`);
-                        loggerConsole.error(`Hubo un problema con la consulta ${err}`);
+                        loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                        loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
                     })
                 } else {
-                    loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
-                    loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+                    loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                    loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
                 }
             }).catch((err) => {
-                loggerFile.error(`Hubo un problema con la consulta ${err}`);
-                loggerConsole.error(`Hubo un problema con la consulta ${err}`);
+                loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
             })
         })
     }).catch((err) => {

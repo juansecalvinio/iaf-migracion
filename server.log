@@ -1,77 +1,468 @@
-[2018-11-27T13:17:30.839] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T13:17:30.841] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T13:17:32.106] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: connect ECONNREFUSED 127.0.0.1:3334
-[2018-11-27T13:17:32.106] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: connect ECONNREFUSED 127.0.0.1:3334
-[2018-11-27T13:17:32.111] [INFO] default - Hubo un problema consultando los diagnosticos: Error: connect ECONNREFUSED 127.0.0.1:3334
-[2018-11-27T13:17:32.111] [INFO] server.js - Hubo un problema consultando los diagnosticos: Error: connect ECONNREFUSED 127.0.0.1:3334
-[2018-11-27T13:17:56.997] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T13:17:56.998] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T13:17:58.926] [INFO] default - undefined
-[2018-11-27T13:17:58.926] [INFO] server.js - undefined
-[2018-11-27T13:25:50.521] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T13:25:50.523] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T13:25:52.457] [INFO] default - undefined
-[2018-11-27T13:25:52.458] [INFO] server.js - undefined
-[2018-11-27T13:26:28.638] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T13:26:28.640] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T13:26:30.443] [INFO] default - undefined
-[2018-11-27T13:26:30.443] [INFO] server.js - undefined
-[2018-11-27T13:39:29.135] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T13:39:29.136] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T13:39:29.388] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T13:39:29.388] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T13:39:29.394] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T13:39:29.394] [INFO] server.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:04:51.279] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:04:51.282] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T14:04:51.536] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:04:51.536] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:04:51.540] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:04:51.540] [ERROR] default - ReferenceError: logger is not defined
-    at httpRequest.then.data (C:\Juanse\fleming\PROYECTOS PROGRAMACION\Migracion Diagnosticos\iaf-migracion\server.js:39:5)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-[2018-11-27T14:04:52.377] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:04:52.379] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T14:04:54.224] [INFO] default - undefined
-[2018-11-27T14:04:54.224] [ERROR] default - ReferenceError: logger is not defined
-    at httpRequest.then.data (C:\Juanse\fleming\PROYECTOS PROGRAMACION\Migracion Diagnosticos\iaf-migracion\server.js:39:5)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-[2018-11-27T14:04:58.874] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:04:58.876] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T14:04:59.109] [INFO] default - undefined
-[2018-11-27T14:04:59.109] [INFO] server.js - undefined
-[2018-11-27T14:06:27.992] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T14:06:27.994] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:06:30.361] [INFO] server.js - undefined
-[2018-11-27T14:06:30.362] [INFO] default - undefined
-[2018-11-27T14:07:47.234] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T14:07:47.235] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:07:49.275] [INFO] server.js - undefined
-[2018-11-27T14:07:49.276] [INFO] default - undefined
-[2018-11-27T14:08:15.580] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T14:08:15.582] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:08:15.852] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:08:15.852] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:08:15.857] [INFO] server.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:08:15.857] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:08:35.840] [INFO] server.js - Escuchando desde el puerto 3335
-[2018-11-27T14:08:35.843] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:08:37.943] [INFO] server.js - undefined
-[2018-11-27T14:08:37.944] [INFO] default - undefined
-[2018-11-27T14:08:55.751] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:08:55.754] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:08:57.622] [INFO] default - undefined
-[2018-11-27T14:08:57.622] [INFO] default - undefined
-[2018-11-27T14:08:58.476] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:08:58.805] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:08:58.805] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:08:58.813] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:10:12.640] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:10:14.542] [INFO] default - undefined
-[2018-11-27T14:10:20.865] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:10:21.151] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:10:21.186] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
-[2018-11-27T14:10:30.292] [INFO] default - Escuchando desde el puerto 3335
-[2018-11-27T14:10:30.525] [INFO] default - undefined
-[2018-11-27T14:12:16.825] [INFO] file - Escuchando desde el puerto 3335
-[2018-11-27T14:12:19.071] [INFO] file - undefined
+[2018-11-27T15:16:41.862] [INFO] file - Escuchando desde el puerto 3335
+[2018-11-27T15:16:42.098] [ERROR] file - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T15:16:42.107] [INFO] file - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T15:16:49.049] [INFO] file - Escuchando desde el puerto 3335
+[2018-11-27T15:16:51.286] [INFO] file - undefined
+[2018-11-27T15:16:51.573] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91057 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.613] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91060 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.646] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91061 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.683] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89416 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.723] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81915 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.759] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90360 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.792] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90360 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.826] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88945 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.865] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86265 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.901] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88992 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.936] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81528 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:51.975] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81528 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.015] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91065 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.049] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91065 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.089] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91067 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.123] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77491 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.152] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86059 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.183] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91069 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.214] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85896 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.246] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87363 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.283] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79913 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.319] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86723 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.364] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91075 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.391] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87285 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.429] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82471 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.463] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87619 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.496] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90256 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.536] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 72995 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.566] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82807 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.598] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 66674 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.630] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81406 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.668] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69140 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.700] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69140 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.740] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 73841 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.769] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82807 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.799] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85863 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.836] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88726 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.866] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 78225 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.891] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83257 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.924] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90807 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.952] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91088 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:52.995] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91090 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.035] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91091 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.066] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91096 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.113] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90966 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.142] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90966 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.178] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81192 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.209] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81192 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.243] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91098 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.281] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91099 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.320] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91100 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.368] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81390 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.391] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86493 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.419] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84281 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.453] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85108 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.482] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91106 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.512] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91109 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.541] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83991 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.573] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64974 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.602] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79857 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.630] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 62684 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.676] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85742 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.713] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 62684 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.748] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86457 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.776] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81158 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.805] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81158 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.836] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82522 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.861] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82522 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.887] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91113 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.921] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91115 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.954] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91117 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:53.988] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91118 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.021] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84562 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.050] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83124 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.079] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83124 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.107] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84562 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.149] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 76625 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.190] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88090 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.224] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91119 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.260] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91121 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.296] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 78815 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.325] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79967 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.354] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91137 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.389] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 71517 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.430] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85219 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.457] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86325 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.486] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89847 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.519] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86635 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.547] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83776 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.576] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89308 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.608] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80248 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.642] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 63402 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.674] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84595 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.711] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64450 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.752] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64450 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.786] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90619 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.821] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89480 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.847] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83250 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.885] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91146 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.916] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91150 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.942] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86871 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.969] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 78949 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:54.995] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91155 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.019] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84633 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.045] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83014 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.074] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85308 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.101] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90775 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.132] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83014 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.160] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91161 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.188] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91162 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.216] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91162 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.251] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91164 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.279] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87492 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.307] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87661 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.337] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85797 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.360] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90474 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.391] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87034 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.420] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90204 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.451] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90204 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.477] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90204 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.502] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91170 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.526] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91177 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.568] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83891 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.604] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84549 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.629] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88570 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.677] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84549 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.717] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91183 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.749] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87210 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.776] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91189 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.805] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91190 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.841] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91192 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.869] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91197 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.897] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91197 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.927] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91198 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:55.963] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91198 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.002] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79411 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.037] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90772 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.082] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86256 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.106] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84057 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.127] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64658 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.147] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64658 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.175] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81531 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.207] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87676 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.242] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 65130 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.270] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86189 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.298] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90266 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.323] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91211 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.351] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91217 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.380] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91219 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.404] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91224 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.437] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88030 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.477] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87307 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.517] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91227 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.544] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80274 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.571] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88595 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.596] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91231 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.632] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91232 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.664] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91236 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.691] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64664 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.720] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89351 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.750] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64664 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.783] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80744 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.813] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 65066 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.838] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87549 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.864] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90065 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.887] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87271 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.912] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79647 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.938] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 65066 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.962] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83797 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:56.985] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91249 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.017] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85430 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.049] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91253 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.076] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87613 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.100] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87613 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.124] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91261 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.152] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91261 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.179] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91267 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.206] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 66684 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.240] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87964 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.276] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89275 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.307] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81229 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.353] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90086 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.384] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81229 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.417] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88635 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.453] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86313 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.477] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86896 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.498] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87453 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.520] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88409 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.553] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87453 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.588] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91277 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.612] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91279 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.634] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91284 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.657] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89047 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.688] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91030 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.715] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91297 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.740] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91299 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.774] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90257 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.801] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86669 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.824] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86669 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.845] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86812 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.866] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89260 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.885] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91312 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.914] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91318 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.941] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91321 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:57.970] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89818 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.009] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88648 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.037] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91324 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.060] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91325 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.084] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91329 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.109] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91332 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.138] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82704 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.164] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77032 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.191] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89248 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.218] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 70241 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.242] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89248 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.268] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80584 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.291] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 78637 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.321] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83325 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.345] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83325 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.375] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91342 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.400] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91347 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.423] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88376 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.453] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84021 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.473] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88376 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.495] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79908 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.516] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88981 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.535] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91358 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.555] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91364 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.575] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91365 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.606] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89296 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.641] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89296 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.680] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64178 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.712] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 64178 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.733] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 75949 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.755] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80153 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.788] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83933 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.809] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83965 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.841] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91368 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.862] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91369 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.882] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79380 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.901] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83508 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.923] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 78082 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.946] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 78082 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.967] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80404 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:58.991] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86495 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.015] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91382 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.037] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91383 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.068] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91386 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.094] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91389 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.120] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91389 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.145] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77649 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.173] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77752 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.199] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88148 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.223] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89001 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.251] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77649 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.276] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89175 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.301] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89175 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.340] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80720 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.368] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83869 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.391] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87576 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.415] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80720 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.447] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77499 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.468] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77499 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.489] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77051 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.513] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91396 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.544] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91397 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.569] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87771 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.593] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87771 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.618] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91404 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.647] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88147 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.680] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88147 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.704] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91407 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.735] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83301 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.765] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80475 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.802] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87502 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.838] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91408 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.868] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91414 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.893] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91416 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.921] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91419 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.958] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82237 ; Fecha OS: 2018-08-17
+[2018-11-27T15:16:59.996] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88393 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.025] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86521 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.067] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 67364 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.096] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83545 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.123] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89297 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.151] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80869 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.188] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91430 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.222] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91431 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.247] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91431 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.274] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91436 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.305] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91436 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.339] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87995 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.375] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90129 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.416] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83400 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.442] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90193 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.467] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 78462 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.499] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82207 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.531] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87795 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.557] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88392 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.585] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91453 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.612] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91463 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.637] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91482 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.671] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91482 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.710] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87841 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.743] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79954 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.789] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 79954 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.818] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90806 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.840] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84128 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.873] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88413 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.904] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 77920 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.947] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88247 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.972] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 74966 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:00.994] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 80582 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.014] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84099 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.048] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91498 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.071] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91500 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.091] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91504 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.117] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91504 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.145] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88414 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.166] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90827 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.189] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81626 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.218] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81626 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.240] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88143 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.259] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 68433 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.287] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 68433 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.306] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82263 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.332] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91510 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.364] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91510 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.391] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91513 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.425] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87563 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.450] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91519 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.469] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88626 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.488] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 74960 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.508] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82935 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.542] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82935 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.581] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83253 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.601] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83888 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.625] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69126 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.659] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69126 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.698] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91525 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.722] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91529 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.747] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91529 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.773] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87612 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.797] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88346 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.826] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88665 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.854] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85323 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.877] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 70771 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.902] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91533 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.925] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81477 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.956] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69850 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:01.981] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69850 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.005] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85169 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.037] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82452 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.065] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82452 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.089] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88359 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.130] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89486 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.174] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87910 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.204] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84728 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.233] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91545 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.262] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91545 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.286] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91551 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.309] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91557 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.347] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89202 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.390] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90814 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.422] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90814 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.466] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69856 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.501] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69856 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.535] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91574 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.563] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91574 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.591] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84224 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.621] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81644 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.650] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 81644 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.676] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87677 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.702] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69865 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.741] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69865 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.771] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85018 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.801] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88993 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.826] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91587 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.862] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91591 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.895] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89872 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.919] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84225 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.941] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83524 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.969] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88820 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:02.996] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91606 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.020] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91609 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.042] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91612 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.070] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90677 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.097] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90677 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.120] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88826 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.141] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89717 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.169] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89717 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.199] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90512 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.224] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90512 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.249] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 86191 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.272] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82073 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.298] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82073 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.323] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91171 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.352] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85612 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.374] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91622 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.399] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91622 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.432] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91627 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.465] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91634 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.491] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 71893 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.515] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 71893 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.543] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89783 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.582] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91636 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.607] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87770 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.634] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87770 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.662] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91648 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.687] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91649 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.709] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87926 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.734] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85877 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.758] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89914 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.785] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89914 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.819] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83280 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.846] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83280 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.872] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 82094 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.898] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91652 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.920] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85167 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.952] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90841 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.973] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90059 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:03.996] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83463 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.019] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 83463 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.041] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89926 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.066] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89926 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.088] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 71247 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.123] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91659 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.153] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91661 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.184] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91662 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.215] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 70420 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.246] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90052 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.272] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89394 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.298] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84569 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.321] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84569 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.348] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85296 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.379] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91673 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.404] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91676 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.429] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 84507 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.454] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90167 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.483] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90697 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.515] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88560 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.543] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88560 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.571] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69916 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.602] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91685 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.629] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85021 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.654] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89506 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.675] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 90940 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.703] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69125 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.732] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69125 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.758] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91301 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.784] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91698 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.808] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 69715 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.836] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89513 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.859] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89513 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.889] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 85980 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.913] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89837 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.937] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89837 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.968] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91719 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:04.991] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 89897 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:05.016] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 87939 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:05.038] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 91724 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:05.068] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88037 ; Fecha OS: 2018-08-17
+[2018-11-27T15:17:05.099] [INFO] file - Dato insertado correctamente. Rows affected: 1 | Tipo: CEXT ; OS: 88037 ; Fecha OS: 2018-08-17
