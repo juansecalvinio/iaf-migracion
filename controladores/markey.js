@@ -151,23 +151,23 @@ function insertDiagnosticos(data) {
                     '${obj.Pregunta}', ${obj.CodigoRespuesta}, '${obj.Respuesta}', CONVERT(VARCHAR, GETDATE(), 120))`;
                     request.query(query).then((recordset) => {
                         if (recordset.rowsAffected == 0) {
-                            loggerFile.error(`No se ha insertado ningún dato | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
-                            loggerConsole.error(`No se ha insertado ningún dato | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                            loggerFile.error(`No se ha insertado ningún dato | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                            loggerConsole.error(`No se ha insertado ningún dato | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                         } else {
-                            loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
-                            loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                            loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                            loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                         }
                     }).catch((err) => {
-                        loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
-                        loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                        loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                        loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                     })
                 } else {
-                    loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
-                    loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                    loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                    loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                 }
             }).catch((err) => {
-                loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
-                loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha}`);
+                loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
             })
         })
     }).catch((err) => {
