@@ -1,5 +1,7 @@
 require('dotenv').config();
 const mssql = require('mssql');
+const loggerConsole = require('./logger').getLogger('console');
+const loggerFile = require('./logger').getLogger('file');
 
 const config = {
     user: process.env.MKE_USER,
@@ -22,11 +24,12 @@ const sqlConnection = new mssql.ConnectionPool(config);
 function obtenerDiagnosticos(req, res) {
     const query = 'select top 1 * from DIAGNOSTICOSGEO order by Fecha desc';
     sqlConnection.close();
-    sqlConnection.connect().then(()=>{
+    sqlConnection.connect().then(() => {
         const request = new mssql.Request(sqlConnection);
         request.query(query, (err, result) => {
-            if(err) {
-                console.log('Error en la consulta', err);
+            if (err) {
+                loggerFile.error(`Error en la consulta ${err}`);
+                loggerConsole.error(`Error en la consulta ${err}`);
                 res.status(404).send(`Error en la consulta ${err}`);
             } else {
                 var response = {
@@ -36,8 +39,9 @@ function obtenerDiagnosticos(req, res) {
                 sqlConnection.close();
             }
         });
-    }).catch((err)=>{
-        console.log(err);
+    }).catch((err) => {
+        loggerFile.error(`Error en la conexión: ${err}`);
+        loggerConsole.error(`Error en la conexión: ${err}`);
         res.status(500).send(`Error en la conexión: ${err}`);
         sqlConnection.close();
     });
@@ -59,18 +63,25 @@ function insertPrueba(req, res) {
                     VALUES (@Tipo, @Os, @Fecha, @Persona, @Nombre, @Ficha, 
                     @Pregunta, @CodigoRespuesta, @Respuesta, GETDATE())`;
         request.query(queryMigracion).then((recordset) => {
-            if(recordset.rowsAffected === 0) {
+            if (recordset.rowsAffected === 0) {
+                loggerFile.error('No se ha insertado ningún dato');
+                loggerConsole.error('No se ha insertado ningún dato');
                 res.status(422).send('No se ha insertado ningún dato');
             } else {
-                console.log(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);  
+                loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+                loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
                 res.send(recordset.rowsAffected);
             }
             sqlConnection.close();
         }).catch((err) => {
+            loggerFile.error(`Hubo un problema con la consulta ${err}`);
+            loggerConsole.error(`Hubo un problema con la consulta ${err}`);
             res.status(404).send(`Hubo un problema con la consulta ${err}`);
             sqlConnection.close();
         });
-    }).catch((err)=>{
+    }).catch((err) => {
+        loggerFile.error(`Hubo un problema con la conexión ${err}`);
+        loggerConsole.error(`Hubo un problema con la conexión ${err}`);
         res.status(500).send(`Hubo un problema con la conexión ${err}`);
         sqlConnection.close();
     });
@@ -93,18 +104,25 @@ function insertPruebaPorParametro(data, req, res) {
                     VALUES (@Tipo, @Os, @Fecha, @Persona, @Nombre, @Ficha, 
                     @Pregunta, @CodigoRespuesta, @Respuesta, GETDATE())`;
         request.query(queryMigracion).then((recordset) => {
-            if(recordset.rowsAffected === 0) {                
+            if (recordset.rowsAffected === 0) {
+                loggerFile.error('No se ha insertado ningún dato');
+                loggerConsole.error('No se ha insertado ningún dato');
                 res.status(422).send('No se ha insertado ningún dato');
-            } else {                
-                console.log(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+            } else {
+                loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+                loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
                 res.send(recordset.rowsAffected);
             }
             sqlConnection.close();
-        }).catch((err) => {            
+        }).catch((err) => {
+            loggerFile.error(`Hubo un problema con la consulta ${err}`);
+            loggerConsole.error(`Hubo un problema con la consulta ${err}`);
             res.status(404).send(`Hubo un problema con la consulta ${err}`);
             sqlConnection.close();
         });
     }).catch((err) => {
+        loggerFile.error(`Hubo un problema con la conexión ${err}`);
+        loggerConsole.error(`Hubo un problema con la conexión ${err}`);
         res.status(500).send(`Hubo un problema con la conexión ${err}`);
         sqlConnection.close();
     });
@@ -127,28 +145,34 @@ function insertDiagnosticos(data) {
             AND Codigo_Respuesta = ${obj.CodigoRespuesta}
             AND Respuesta = '${obj.Respuesta}'`;
             request.query(queryUpdate).then((recordset) => {
-                if(recordset.rowsAffected == 0) {
+                if (recordset.rowsAffected == 0) {
                     var query = `INSERT INTO DIAGNOSTICOSGEO (Tipo, OS, Fecha, Persona, Nombre, Ficha, Pregunta, Codigo_Respuesta, Respuesta, audi_Fecha) 
                     VALUES ('${obj.Tipo}', ${obj.OS}, '${obj.Fecha}', ${obj.Persona}, '${obj.Persona1}', '${obj.Ficha}', 
                     '${obj.Pregunta}', ${obj.CodigoRespuesta}, '${obj.Respuesta}', CONVERT(VARCHAR, GETDATE(), 120))`;
                     request.query(query).then((recordset) => {
-                        if(recordset.rowsAffected == 0) {
-                            console.log('No se ha insertado ningún dato');
+                        if (recordset.rowsAffected == 0) {
+                            loggerFile.error('No se ha insertado ningún dato');
+                            loggerConsole.error('No se ha insertado ningún dato');
                         } else {
-                            console.log(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+                            loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+                            loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
                         }
                     }).catch((err) => {
-                        console.log(`Hubo un problema con la consulta ${err}`);           
+                        loggerFile.error(`Hubo un problema con la consulta ${err}`);
+                        loggerConsole.error(`Hubo un problema con la consulta ${err}`);
                     })
                 } else {
-                    console.log(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+                    loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
+                    loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
                 }
             }).catch((err) => {
-                console.log(`Hubo un problema con la consulta ${err}`);           
+                loggerFile.error(`Hubo un problema con la consulta ${err}`);
+                loggerConsole.error(`Hubo un problema con la consulta ${err}`);
             })
         })
     }).catch((err) => {
-        console.log(`Hubo un problema con la conexión ${err}`);      
+        loggerFile.error(`Hubo un problema con la conexión ${err}`);
+        loggerConsole.error(`Hubo un problema con la conexión ${err}`);
     });
 }
 
@@ -160,11 +184,10 @@ function obtenerUltimaFecha() {
             sqlConnection.connect(config).then(pool => {
                 var request = new mssql.Request(pool);
                 request.query(query).then((recordset) => {
-                    if(recordset.recordset == '') {
+                    if (recordset.recordset == '') {
                         resolve(null);
                     } else {
                         var fecha = recordset.recordset;
-                        console.log(fecha);
                         resolve(fecha);
                     }
                 }).catch((err) => {
@@ -184,6 +207,3 @@ module.exports = {
     obtenerDiagnosticos: obtenerDiagnosticos,
     obtenerUltimaFecha: obtenerUltimaFecha
 }
-
-
-

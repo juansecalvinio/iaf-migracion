@@ -1,0 +1,77 @@
+[2018-11-27T13:17:30.839] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T13:17:30.841] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T13:17:32.106] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: connect ECONNREFUSED 127.0.0.1:3334
+[2018-11-27T13:17:32.106] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: connect ECONNREFUSED 127.0.0.1:3334
+[2018-11-27T13:17:32.111] [INFO] default - Hubo un problema consultando los diagnosticos: Error: connect ECONNREFUSED 127.0.0.1:3334
+[2018-11-27T13:17:32.111] [INFO] server.js - Hubo un problema consultando los diagnosticos: Error: connect ECONNREFUSED 127.0.0.1:3334
+[2018-11-27T13:17:56.997] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T13:17:56.998] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T13:17:58.926] [INFO] default - undefined
+[2018-11-27T13:17:58.926] [INFO] server.js - undefined
+[2018-11-27T13:25:50.521] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T13:25:50.523] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T13:25:52.457] [INFO] default - undefined
+[2018-11-27T13:25:52.458] [INFO] server.js - undefined
+[2018-11-27T13:26:28.638] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T13:26:28.640] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T13:26:30.443] [INFO] default - undefined
+[2018-11-27T13:26:30.443] [INFO] server.js - undefined
+[2018-11-27T13:39:29.135] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T13:39:29.136] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T13:39:29.388] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T13:39:29.388] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T13:39:29.394] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T13:39:29.394] [INFO] server.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:04:51.279] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:04:51.282] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T14:04:51.536] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:04:51.536] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:04:51.540] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:04:51.540] [ERROR] default - ReferenceError: logger is not defined
+    at httpRequest.then.data (C:\Juanse\fleming\PROYECTOS PROGRAMACION\Migracion Diagnosticos\iaf-migracion\server.js:39:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-11-27T14:04:52.377] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:04:52.379] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T14:04:54.224] [INFO] default - undefined
+[2018-11-27T14:04:54.224] [ERROR] default - ReferenceError: logger is not defined
+    at httpRequest.then.data (C:\Juanse\fleming\PROYECTOS PROGRAMACION\Migracion Diagnosticos\iaf-migracion\server.js:39:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-11-27T14:04:58.874] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:04:58.876] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T14:04:59.109] [INFO] default - undefined
+[2018-11-27T14:04:59.109] [INFO] server.js - undefined
+[2018-11-27T14:06:27.992] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T14:06:27.994] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:06:30.361] [INFO] server.js - undefined
+[2018-11-27T14:06:30.362] [INFO] default - undefined
+[2018-11-27T14:07:47.234] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T14:07:47.235] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:07:49.275] [INFO] server.js - undefined
+[2018-11-27T14:07:49.276] [INFO] default - undefined
+[2018-11-27T14:08:15.580] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T14:08:15.582] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:08:15.852] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:08:15.852] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:08:15.857] [INFO] server.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:08:15.857] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:08:35.840] [INFO] server.js - Escuchando desde el puerto 3335
+[2018-11-27T14:08:35.843] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:08:37.943] [INFO] server.js - undefined
+[2018-11-27T14:08:37.944] [INFO] default - undefined
+[2018-11-27T14:08:55.751] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:08:55.754] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:08:57.622] [INFO] default - undefined
+[2018-11-27T14:08:57.622] [INFO] default - undefined
+[2018-11-27T14:08:58.476] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:08:58.805] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:08:58.805] [ERROR] geosalud.js - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:08:58.813] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:10:12.640] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:10:14.542] [INFO] default - undefined
+[2018-11-27T14:10:20.865] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:10:21.151] [ERROR] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:10:21.186] [INFO] default - Hubo un problema consultando los diagnosticos: Error: ER_EMPTY_QUERY: Query was empty
+[2018-11-27T14:10:30.292] [INFO] default - Escuchando desde el puerto 3335
+[2018-11-27T14:10:30.525] [INFO] default - undefined
+[2018-11-27T14:12:16.825] [INFO] file - Escuchando desde el puerto 3335
+[2018-11-27T14:12:19.071] [INFO] file - undefined
