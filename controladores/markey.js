@@ -47,87 +47,6 @@ function obtenerDiagnosticos(req, res) {
     });
 }
 
-function insertPrueba(req, res) {
-    sqlConnection.connect().then(pool => {
-        const request = new mssql.Request(pool);
-        request.input('Tipo', 'CEXT');
-        request.input('OS', 125291);
-        request.input('Fecha', '2018-11-01');
-        request.input('Persona', 92530);
-        request.input('Nombre', 'GUERRERO  MONICA INES ');
-        request.input('Ficha', 'PRIMERA CONSULTA');
-        request.input('Pregunta', 'DIAGNOSTICO ONCOL. TUM.SOLIDOS');
-        request.input('CodigoRespuesta', 12);
-        request.input('Respuesta', 'MELANOMA');
-        var queryMigracion = `INSERT INTO DIAGNOSTICOSGEO (Tipo, OS, Fecha, Persona, Nombre, Ficha, Pregunta, Codigo_Respuesta, Respuesta, audi_Fecha) 
-                    VALUES (@Tipo, @Os, @Fecha, @Persona, @Nombre, @Ficha, 
-                    @Pregunta, @CodigoRespuesta, @Respuesta, GETDATE())`;
-        request.query(queryMigracion).then((recordset) => {
-            if (recordset.rowsAffected === 0) {
-                loggerFile.error('No se ha insertado ningún dato');
-                loggerConsole.error('No se ha insertado ningún dato');
-                res.status(422).send('No se ha insertado ningún dato');
-            } else {
-                loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
-                loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
-                res.send(recordset.rowsAffected);
-            }
-            sqlConnection.close();
-        }).catch((err) => {
-            loggerFile.error(`Hubo un problema con la consulta ${err}`);
-            loggerConsole.error(`Hubo un problema con la consulta ${err}`);
-            res.status(404).send(`Hubo un problema con la consulta ${err}`);
-            sqlConnection.close();
-        });
-    }).catch((err) => {
-        loggerFile.error(`Hubo un problema con la conexión ${err}`);
-        loggerConsole.error(`Hubo un problema con la conexión ${err}`);
-        res.status(500).send(`Hubo un problema con la conexión ${err}`);
-        sqlConnection.close();
-    });
-}
-
-function insertPruebaPorParametro(data, req, res) {
-    sqlConnection.close();
-    sqlConnection.connect().then(pool => {
-        var request = new mssql.Request(pool);
-        request.input('Tipo', data.Tipo);
-        request.input('OS', data.OS);
-        request.input('Fecha', data.Fecha);
-        request.input('Persona', data.Persona);
-        request.input('Nombre', data.Persona1);
-        request.input('Ficha', data.Ficha);
-        request.input('Pregunta', data.Pregunta);
-        request.input('CodigoRespuesta', data.CodigoRespuesta);
-        request.input('Respuesta', data.Respuesta);
-        var queryMigracion = `INSERT INTO DIAGNOSTICOSGEO (Tipo, OS, Fecha, Persona, Nombre, Ficha, Pregunta, Codigo_Respuesta, Respuesta, audi_Fecha) 
-                    VALUES (@Tipo, @Os, @Fecha, @Persona, @Nombre, @Ficha, 
-                    @Pregunta, @CodigoRespuesta, @Respuesta, GETDATE())`;
-        request.query(queryMigracion).then((recordset) => {
-            if (recordset.rowsAffected === 0) {
-                loggerFile.error('No se ha insertado ningún dato');
-                loggerConsole.error('No se ha insertado ningún dato');
-                res.status(422).send('No se ha insertado ningún dato');
-            } else {
-                loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
-                loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected}`);
-                res.send(recordset.rowsAffected);
-            }
-            sqlConnection.close();
-        }).catch((err) => {
-            loggerFile.error(`Hubo un problema con la consulta ${err}`);
-            loggerConsole.error(`Hubo un problema con la consulta ${err}`);
-            res.status(404).send(`Hubo un problema con la consulta ${err}`);
-            sqlConnection.close();
-        });
-    }).catch((err) => {
-        loggerFile.error(`Hubo un problema con la conexión ${err}`);
-        loggerConsole.error(`Hubo un problema con la conexión ${err}`);
-        res.status(500).send(`Hubo un problema con la conexión ${err}`);
-        sqlConnection.close();
-    });
-}
-
 function insertDiagnosticos(data) {
     sqlConnection.close();
     sqlConnection.connect(config).then(pool => {
@@ -162,8 +81,8 @@ function insertDiagnosticos(data) {
                         loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                     })
                 } else {
-                    loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
-                    loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                    loggerFile.info(`Dato actualizado correctamente. Rows updated: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                    loggerConsole.info(`Dato actualizado correctamente. Rows updated: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                 }
             }).catch((err) => {
                 loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
@@ -201,8 +120,6 @@ function obtenerUltimaFecha() {
 }
 
 module.exports = {
-    insertPrueba: insertPrueba,
-    insertPruebaPorParametro: insertPruebaPorParametro,
     insertDiagnosticos: insertDiagnosticos,
     obtenerDiagnosticos: obtenerDiagnosticos,
     obtenerUltimaFecha: obtenerUltimaFecha
