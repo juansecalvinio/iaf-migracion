@@ -17,6 +17,7 @@ const puerto = '3335';
 
 function httpRequest(){
     loggerConsole.info('Realizando HTTP Request');
+    loggerFile.info('Realizando HTTP Request');
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             request({
