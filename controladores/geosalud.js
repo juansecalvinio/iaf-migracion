@@ -1,6 +1,5 @@
 require('dotenv').config();
 const mysql = require('mysql');
-const loggerConsole = require('./logger').getLogger('console');
 const loggerFile = require('./logger').getLogger('file');
 const markey = require('./markey');
 
@@ -20,10 +19,8 @@ function obtenerDiagnosticos() {
             markey.obtenerUltimaFecha().then((data) => {
                 if(!data) {
                     loggerFile.info('DATA NULL');
-                    loggerConsole.info('DATA NULL');
                 } else {
                     var ultimaFecha = data[0].Fecha;
-                    console.log(ultimaFecha);
                     var queryDiagnosticosGeo = `SELECT distinct TRS1.TipOSAbrev as 'Tipo', o.OsId as 'OS', DATE_FORMAT(o.OSFchHor, '%Y-%m-%d') as 'Fecha',
                     o.OsPersId as 'Persona', OSRRHHID, RRHHDESC, Concat(Concat(o.OSPersApe, ' ', o.OSPersApe2) , ' ', Concat(o.OSPersNom, ' ', o.OSPersNom2)) as 'Persona1', 
                     TRS1.FicNom as 'Ficha', TRS1.PregFrmDinaDesc as 'Pregunta', TRS1.OsFicResPregValTabDinValId as 'CodigoRespuesta', 
@@ -55,7 +52,6 @@ function obtenerDiagnosticos() {
                                     })
                                     resolve(diagnosticos);
                                 } else {
-                                    loggerConsole.info('No hay diagnosticos para migrar');
                                     reject('No hay diagnosticos para migrar');
                                 }
                             })
@@ -80,7 +76,6 @@ function mostrarDiagnosticos(req, res) {
         res.send(data);
     }).catch((err) => {
         loggerFile.error(`Hubo un problema consultando los diagnosticos: ${err}`);
-        loggerConsole.error(`Hubo un problema consultando los diagnosticos: ${err}`);
         res.status(404).send(`Hubo un problema consultando los diagnosticos: ${err}`);
     });
 }
@@ -91,7 +86,6 @@ function migrarDiagnosticos(req, res) {
     })
     .catch((err) => {
         loggerFile.error(`Hubo un problema consultando los diagnosticos: ${err}`);
-        loggerConsole.error(`Hubo un problema consultando los diagnosticos: ${err}`);
         res.status(404).send(`Hubo un problema consultando los diagnosticos: ${err}`);
     });
 }

@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
 const loggerFile  = require('./controladores/logger').getLogger('file');
-var loggerConsole = require('./controladores/logger').getLogger('console');
 
 const app = express();
 
@@ -16,7 +15,6 @@ app.use('/', migracion);
 const puerto = '3335';
 
 function httpRequest(){
-    loggerConsole.info('Realizando HTTP Request');
     loggerFile.info('Realizando HTTP Request');
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -49,14 +47,11 @@ function httpRequest(){
 }
 
 httpRequest().then(data => {
-    loggerConsole.info(data);
     loggerFile.info(data);
 }).catch(err => {
-    loggerConsole.error(err);
     loggerFile.error(err);
 });
 
 app.listen(puerto, () => {
-    loggerConsole.info(`Escuchando desde el puerto ${puerto}`);
     loggerFile.info(`Escuchando desde el puerto ${puerto}`);
 });

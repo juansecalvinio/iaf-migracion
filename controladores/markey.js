@@ -1,6 +1,5 @@
 require('dotenv').config();
 const mssql = require('mssql');
-const loggerConsole = require('./logger').getLogger('console');
 const loggerFile = require('./logger').getLogger('file');
 
 const config = {
@@ -29,7 +28,6 @@ function obtenerDiagnosticos(req, res) {
         request.query(query, (err, result) => {
             if (err) {
                 loggerFile.error(`Error en la consulta ${err}`);
-                loggerConsole.error(`Error en la consulta ${err}`);
                 res.status(404).send(`Error en la consulta ${err}`);
             } else {
                 var response = {
@@ -41,7 +39,6 @@ function obtenerDiagnosticos(req, res) {
         });
     }).catch((err) => {
         loggerFile.error(`Error en la conexión: ${err}`);
-        loggerConsole.error(`Error en la conexión: ${err}`);
         res.status(500).send(`Error en la conexión: ${err}`);
         sqlConnection.close();
     });
@@ -71,27 +68,21 @@ function insertDiagnosticos(data) {
                     request.query(query).then((recordset) => {
                         if (recordset.rowsAffected == 0) {
                             loggerFile.error(`No se ha insertado ningún dato | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
-                            loggerConsole.error(`No se ha insertado ningún dato | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                         } else {
                             loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
-                            loggerConsole.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                         }
                     }).catch((err) => {
                         loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
-                        loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                     })
                 } else {
                     loggerFile.info(`Dato actualizado correctamente. Rows updated: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
-                    loggerConsole.info(`Dato actualizado correctamente. Rows updated: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                 }
             }).catch((err) => {
                 loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
-                loggerConsole.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
             })
         })
     }).catch((err) => {
         loggerFile.error(`Hubo un problema con la conexión ${err}`);
-        loggerConsole.error(`Hubo un problema con la conexión ${err}`);
     });
 }
 
