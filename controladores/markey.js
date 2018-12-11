@@ -20,30 +20,6 @@ const config = {
 
 const sqlConnection = new mssql.ConnectionPool(config);
 
-function obtenerDiagnosticos(req, res) {
-    const query = 'select top 1 * from DIAGNOSTICOSGEO order by Fecha desc';
-    sqlConnection.close();
-    sqlConnection.connect().then(() => {
-        const request = new mssql.Request(sqlConnection);
-        request.query(query, (err, result) => {
-            if (err) {
-                loggerFile.error(`Error en la consulta ${err}`);
-                res.status(404).send(`Error en la consulta ${err}`);
-            } else {
-                var response = {
-                    'diagnostico': result.recordset
-                }
-                res.send(JSON.stringify(response));
-                sqlConnection.close();
-            }
-        });
-    }).catch((err) => {
-        loggerFile.error(`Error en la conexión: ${err}`);
-        res.status(500).send(`Error en la conexión: ${err}`);
-        sqlConnection.close();
-    });
-}
-
 function insertDiagnosticos(data) {
     sqlConnection.close();
     sqlConnection.connect(config).then(pool => {
@@ -112,6 +88,5 @@ function obtenerUltimaFecha() {
 
 module.exports = {
     insertDiagnosticos: insertDiagnosticos,
-    obtenerDiagnosticos: obtenerDiagnosticos,
     obtenerUltimaFecha: obtenerUltimaFecha
 }
