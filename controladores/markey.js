@@ -3,10 +3,14 @@ const mssql = require('mssql');
 const loggerFile = require('./logger').getLogger('file');
 
 const config = {
-    user: process.env.MKE_USER,
-    password: process.env.MKE_PASS,
-    server: process.env.MKE_SERVER,
-    database: process.env.MKE_DB,
+    // user: process.env.MKE_USER,
+    // password: process.env.MKE_PASS,
+    // server: process.env.MKE_SERVER,
+    // database: process.env.MKE_DB,
+    user: process.env.MK_USER,
+    password: process.env.MK_PASS,
+    server: process.env.MK_SERVER,
+    database: process.env.MK_DB,
     pool: {
         max: 0,
         min: 0,
@@ -48,13 +52,13 @@ function insertDiagnosticos(data) {
                             loggerFile.info(`Dato insertado correctamente. Rows affected: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                         }
                     }).catch((err) => {
-                        loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                        loggerFile.error(`Hubo un problema insertando ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                     })
                 } else {
                     loggerFile.info(`Dato actualizado correctamente. Rows updated: ${recordset.rowsAffected} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
                 }
             }).catch((err) => {
-                loggerFile.error(`Hubo un problema con la consulta ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
+                loggerFile.error(`Hubo un problema actualizando ${err} | Tipo: ${obj.Tipo} ; OS: ${obj.OS} ; Fecha OS: ${obj.Fecha} ; Persona: ${obj.Persona} - ${obj.Persona1}`);
             })
         })
     }).catch((err) => {

@@ -35,7 +35,7 @@ function obtenerDiagnosticos() {
                     and of2.OsFicResId=of1.OsFicResId and of2.PregFrmDinaId=of1.PregFrmDinaId) and of1.FicId in (1,2) and of1.PregFrmDinaId in(45,14,62) 
                     and (fic.FicId = of1.FicId) and (pre.PregFrmDinaId = of1.PregFrmDinaId ) 
                     and (tio.TipOSId = of1.TipOSId)) TRS1 ON (TRS1.TipOSId = o.TipOSId and TRS1.osId = o.OsId) JOIN RRHH RH ON O.OSRRHHId = RH.RRHHID
-                    where DATE_FORMAT(o.OSFchHor, '%Y-%m-%d') between '${ultimaFecha}' and ('${ultimaFecha}' + interval 1 day)
+                    where DATE_FORMAT(o.OSFchHor, '%Y-%m-%d') between '${ultimaFecha}' and ('${ultimaFecha}' + interval 7 day)
                     and TRS1.OsFicResPregResultado <> ''
                     order by o.OSFchHor ASC;`;
                     conexion.query(queryDiagnosticosGeo, (error, resultado) => {

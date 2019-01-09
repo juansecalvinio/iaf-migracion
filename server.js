@@ -39,14 +39,13 @@ function httpRequest(){
                 } else {
                     resolve(response.body);
                 }
-            });      
+            });
         }, 100);
     });
 }
 
-httpRequest().then(data => {
-    loggerFile.info(data);
-}).catch(err => {
+httpRequest().then()
+.catch(err => {
     loggerFile.error(err);
 });
 
