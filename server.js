@@ -14,7 +14,7 @@ app.use('/', migracion);
 
 const puerto = '3335';
 
-function httpRequest(){
+const httpRequest = () => {
     loggerFile.info('Realizando HTTP Request');
     return new Promise((resolve, reject) => {
         setTimeout(() => {

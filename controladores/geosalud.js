@@ -2,15 +2,46 @@ require('dotenv').config();
 const mysql = require('mysql');
 const loggerFile = require('./logger').getLogger('file');
 const markey = require('./markey');
+const tunnel = require('tunnel-ssh');
 
-// Conexion a GEOSalud
-const conexion = mysql.createConnection({
-    host: process.env.GEOSALUD_HOST,
-    port: process.env.GEOSALUD_PORT,
-    user: process.env.GEOSALUD_USER,
-    password: process.env.GEOSALUD_PASS,
-    database: process.env.GEOSALUD_DB
-});
+const conectarTunel = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+            tunnel({
+                host: '172.27.184.7',
+                port: 22,
+                dstHost: '172.27.184.11',
+                dstPort: 3306,
+                localHost: '127.0.0.1',
+                localPort: 3334,
+                username: 'root',
+                password: 'Claro.2017'
+            }, (err) => {
+                if(err) reject(err);
+                loggerFile.info('Tunel conectado.');
+                // Conexion a GEOSalud
+                let conexion = mysql.createConnection({
+                    host: process.env.GEOSALUD_HOST,
+                    port: process.env.GEOSALUD_PORT,
+                    user: process.env.GEOSALUD_USER,
+                    password: process.env.GEOSALUD_PASS,
+                    database: process.env.GEOSALUD_DB
+                });
+                conexion.on('error', err => {
+                    conexion.end();
+                    reject(err);
+                });
+                conexion.connect((err) => {
+                    if(err) {
+                        conexion.end();
+                        reject(err);
+                    }
+                    resolve(conexion);
+                })
+            })
+        }, 100);
+    });
+}
 
 function obtenerDiagnosticos() {
     return new Promise(function(resolve, reject) {
@@ -18,7 +49,7 @@ function obtenerDiagnosticos() {
             var diagnosticos = [];
             markey.obtenerUltimaFecha().then((data) => {
                 if(!data) {
-                    loggerFile.info('DATA NULL');
+                    loggerFile.info('No se encontró información en obtenerUltimaFecha.');
                 } else {
                     var ultimaFecha = data[0].Fecha;
                     var queryDiagnosticosGeo = `SELECT distinct TRS1.TipOSAbrev as 'Tipo', o.OsId as 'OS', DATE_FORMAT(o.OSFchHor, '%Y-%m-%d') as 'Fecha',
@@ -35,36 +66,44 @@ function obtenerDiagnosticos() {
                     and of2.OsFicResId=of1.OsFicResId and of2.PregFrmDinaId=of1.PregFrmDinaId) and of1.FicId in (1,2) and of1.PregFrmDinaId in(45,14,62) 
                     and (fic.FicId = of1.FicId) and (pre.PregFrmDinaId = of1.PregFrmDinaId ) 
                     and (tio.TipOSId = of1.TipOSId)) TRS1 ON (TRS1.TipOSId = o.TipOSId and TRS1.osId = o.OsId) JOIN RRHH RH ON O.OSRRHHId = RH.RRHHID
-                    where DATE_FORMAT(o.OSFchHor, '%Y-%m-%d') between '${ultimaFecha}' and ('${ultimaFecha}' + interval 7 day)
+                    where DATE_FORMAT(o.OSFchHor, '%Y-%m-%d') between '${ultimaFecha}' and CURDATE()
                     and TRS1.OsFicResPregResultado <> ''
                     order by o.OSFchHor ASC;`;
-                    conexion.query(queryDiagnosticosGeo, (error, resultado) => {
-                        if(error) {
-                            conexion.query(queryDiagnosticosGeo, (error, resultado) => {
-                                if(error) {
-                                    reject(error);
-                                } else if(resultado.length != 0) {
-                                    var response = {
-                                        'diagnosticos': JSON.parse(JSON.stringify(resultado))
+                    conectarTunel().then((conexion) => {
+                        conexion.query(queryDiagnosticosGeo, (error, resultado) => {
+                            if(error) {
+                                conexion.query(queryDiagnosticosGeo, (error, resultado) => {
+                                    if(error) {
+                                        reject(`Error en la consulta de obtenerDiagnosticos: ${error}`);
+                                    } else if(resultado.length != 0) {
+                                        var response = {
+                                            'diagnosticos': JSON.parse(JSON.stringify(resultado))
+                                        }
+                                        response.diagnosticos.forEach(diagnostico => {
+                                            diagnosticos.push(diagnostico);
+                                        })
+                                        resolve(diagnosticos);
+                                        conexion.end();
+                                    } else {
+                                        reject('No hay diagnosticos para migrar');
+                                        conexion.end();
                                     }
-                                    response.diagnosticos.forEach(diagnostico => {
-                                        diagnosticos.push(diagnostico);
-                                    })
-                                    resolve(diagnosticos);
-                                } else {
-                                    reject('No hay diagnosticos para migrar');
+                                })
+                            } else {
+                                var response = {
+                                    'diagnosticos': JSON.parse(JSON.stringify(resultado))
                                 }
-                            })
-                        } else {
-                            var response = {
-                                'diagnosticos': JSON.parse(JSON.stringify(resultado))
-                            }
-                            response.diagnosticos.forEach(diagnostico => {
-                                diagnosticos.push(diagnostico);
-                            })
-                            resolve(diagnosticos);
-                        }  
-                    });
+                                response.diagnosticos.forEach(diagnostico => {
+                                    diagnosticos.push(diagnostico);
+                                })
+                                resolve(diagnosticos);
+                                conexion.end();
+                            }  
+                        });
+                    }).catch((err) => {
+                        reject(`No se pudo generar el tunel de conexión con GEOSalud: ${err}`);
+                        conexion.end();
+                    });                    
                 }
             });            
         }, 100);

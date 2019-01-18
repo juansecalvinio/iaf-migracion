@@ -3,14 +3,14 @@ const mssql = require('mssql');
 const loggerFile = require('./logger').getLogger('file');
 
 const config = {
-    // user: process.env.MKE_USER,
-    // password: process.env.MKE_PASS,
-    // server: process.env.MKE_SERVER,
-    // database: process.env.MKE_DB,
-    user: process.env.MK_USER,
-    password: process.env.MK_PASS,
-    server: process.env.MK_SERVER,
-    database: process.env.MK_DB,
+    user: process.env.MKE_USER,
+    password: process.env.MKE_PASS,
+    server: process.env.MKE_SERVER,
+    database: process.env.MKE_DB,
+    // user: process.env.MK_USER,
+    // password: process.env.MK_PASS,
+    // server: process.env.MK_SERVER,
+    // database: process.env.MK_DB,
     pool: {
         max: 0,
         min: 0,
